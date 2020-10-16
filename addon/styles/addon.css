@@ -1,0 +1,40 @@
+[class="eh-reset"],
+[class="eh-reset"] *,
+[class="eh-reset"] *:before,
+[class="eh-reset"] *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border-radius: 0;
+  outline: none;
+}
+
+.eh-background {
+  position: relative;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  overflow-x: hidden;
+  height: var(--eh-background-height, 100%);
+}
+
+.eh-hotspot {
+  position: absolute;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  transition: box-shadow 0.3s;
+  background-color: red;
+  margin-left: calc(50% - 0.5 * var(--eh-background-width));
+}
+
+.eh-hotspot:hover {
+  filter: brightness(130%), saturate(130%);
+  box-shadow: 0 5px 20px -10px rgba(0,0,0,1);
+}
+
+.eh-hotspot--pinned {
+  position: fixed;
+}

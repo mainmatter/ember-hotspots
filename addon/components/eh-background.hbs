@@ -1,0 +1,8 @@
+<div ...attributes class="eh-background" style={{this.style}}>
+  {{#if this.imageMissing}}
+    Asset not found: {{@src}}
+    {{log "Asset not found:" @src}}
+  {{/if}}
+
+  {{yield}}
+</div>
