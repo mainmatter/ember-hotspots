@@ -5,6 +5,7 @@
   style={{this.style}}
   role={{if this.isInteractive (if @route "link" "button")}}
   {{on this.triggerEvent this.onTrigger}}
+  {{on "mouseleave" this.onLeave}}
 >
   {{yield}}
 </div>

@@ -54,7 +54,7 @@ export default class EHHotspotComponent extends Component {
 
   get triggerEvent() {
     if (this.args.trigger === 'hover') {
-      return 'mouseenter'
+      return 'mouseenter';
     }
 
     if (this.args.trigger) {
@@ -65,34 +65,29 @@ export default class EHHotspotComponent extends Component {
   }
 
   @action
-  handleTrigger() {
-    this.args.action?.();
-
-    if (this.args.route) {
-      this.router.transitionTo(
-        this.args.route,
-        this.args.queryParams
-          ? {
-              queryParams: this.args.queryParams,
-            }
-          : {}
-      );
+  onLeave() {
+    if (this.args.trigger !== 'hover') {
+      return;
     }
+
+    this.args.action?.();
   }
 
   @action
-  onTrigger(event) {
-    this.handleTrigger();
+  onTrigger() {
+    this.args.action?.();
 
-    if (this.args.trigger === 'hover') {
-      let callback = () => {
-        this.handleTrigger?.();
-        event.target.removeEventListener('mouseleave', callback);
-      }
-
-      event.target.addEventListener('mouseleave', callback)
+    if (!this.args.route) {
+      return;
     }
 
-
+    this.router.transitionTo(
+      this.args.route,
+      this.args.queryParams
+        ? {
+            queryParams: this.args.queryParams,
+          }
+        : {}
+    );
   }
 }
