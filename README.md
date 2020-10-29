@@ -47,6 +47,40 @@ rendering on high density displays used in many mobile devices. No other
 suffixes are supported. Both `<EhBackground />` and `<EhHotspot />` will 
 provide feedback if a referenced image is missing.
 
+All images detected by the addon will be preloaded and added to the browsers 
+prefetch list by default. This behavior can be configured in 
+[the addons options][options]. 
+
+## Demo
+
+The included dummy application of this addon acts as a [online-demo][demo].
+
+[options]: #options
+[demo]: #todo
+
+## Options
+
+Settings can be configured in your applications `ember-cli-build.js`.
+
+```js
+module.exports = function(defaults) {
+  // ...
+
+  let app = new EmberAddon(defaults, {
+    // Defaults
+    'ember-hotspots': {
+      cwd: '/', // limit image parsing to a subfolder of `/public`. Example: pass `/hotspots` to limit to `/public/hotspots`
+      // prefetch and preload make sure images are ready when they should be displayed
+      preload: true, // Preload all images found using a JavaScript preloader which delays your application
+      prefetch: true, // Put prefetch `<link>` tags in the HTML `<head>` so browsers can preload and cache images
+    }
+  });
+
+  // ...
+};
+```
+
+
 ### EhBackground
 
 `<EhBackground />` creates a full width background that is centered to the 
@@ -78,10 +112,10 @@ or navigation.
 [controllers]: https://guides.emberjs.com/release/routing/controllers/
 
 ```hbs
-  <EhHotspot
-    @rect={{array 70 80 200 50}}
-    @action={{fn (mut this.showMenu) (not this.showMenu)}}
-  />
+<EhHotspot
+  @rect={{array 70 80 200 50}}
+  @action={{fn (mut this.showMenu) (not this.showMenu)}}
+/>
 ```
 
 #### Triggering navigation
@@ -89,11 +123,11 @@ or navigation.
 > On click, navigate to `some/route?optional=true`
 
 ```hbs
-  <EhHotspot
-    @rect={{array 70 80 200 50}}
-    @route="some.route"
-    @queryParams=(hash optional=true)
-  />
+<EhHotspot
+  @rect={{array 70 80 200 50}}
+  @route="some.route"
+  @queryParams=(hash optional=true)
+/>
 ```
 
 #### Adding an image
@@ -104,11 +138,83 @@ defaults. In short, in most cases you only need to pass left and top position
 to hotspot.
 
 ```hbs
+<EhHotspot
+  @rect={{array 70 80}}
+  @src="foo@2x.png"
+  @action={{fn (mut this.showMenu) true}}
+/>
+```
+
+### Combining everything into a prototype
+
+#### Prerequisites
+
+* Setup a new Ember application
+* Put three images into the `/public` folder:
+  * One for the background which has a menu button in the upper right corner
+  * one for the open menu
+  * one for the second route
+
+#### Goals of the prototype
+
+* Show the menu when clicking on the menu button. 
+* When clicking anywhere on the open menu, it should close and navigate to a second route.
+* Clicking on the logo on either route will bring us back to the first one.
+
+#### Necessary code
+
+Using the [generate commmand][generate] of `ember-cli` will setup and create 
+the correct files for you.
+
+`ember generate route index` will generate `templates/index.hbs`, where we can 
+put this code:
+
+```hbs
+<EhBackground @src="path/to/your/image/in/the/public/folder@2x.png">
+  {{! The logo hotspot }}
   <EhHotspot
-    @rect={{array 70 80}}
-    @src="foo@2x.png"
-    @action={{fn (mut this.showMenu) true}}
+    @rect={{array 0 0 200 100}}
+    @route="index"
   />
+
+  {{! The hotspot for the menu toggle }}
+  <EhHotspot
+    @rect={{array 900 0 100 100}}
+    @action={{fn (mut this.showMenu) (not this.showMenu)}}
+  />
+
+  {{! The menu }}
+  <EhHotspot
+    @rect={{array 0 100}}
+    @src="menu@2x.png"
+    @action={{fn (mut this.showMenu) false}}
+    @route="another-route"
+  />
+</EhBackground>
+```
+
+`ember generate route another-route` will generate 
+`templates/another-route.hbs`, which will hold this code:
+
+```hbs
+<EhBackground @src="path/to/your/image/in/the/public/folder@2x.png">
+  <EhHotspot
+    @rect={{array 0 0 200 100}}
+    @route="index"
+  />
+
+  <EhHotspot
+    @rect={{array 900 0 100 100}}
+    @action={{fn (mut this.showMenu) (not this.showMenu)}}
+  />
+
+  <EhHotspot
+    @rect={{array 0 100}}
+    @src="menu@2x.png"
+    @action={{fn (mut this.showMenu) false}}
+    @route="another-route"
+  />
+</EhBackground>
 ```
 
 ## Contributing
