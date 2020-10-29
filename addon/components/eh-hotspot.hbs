@@ -1,7 +1,7 @@
 {{! template-lint-disable no-invalid-interactive --}}
 <div
   ...attributes
-  class="eh-hotspot {{if @pinned "eh-hotspot--pinned"}} {{if @src "eh-hotspot--image"}}"
+  class="eh-hotspot {{if @pinned "eh-hotspot--pinned"}} {{if @src "eh-hotspot--image"}} {{if this.ehHotspots.showHotspots "eh-hotspot--highlight"}}"
   style={{this.style}}
   role={{if this.isInteractive (if @route "link" "button")}}
   {{on this.triggerEvent this.onTrigger}}

@@ -5,6 +5,7 @@ import { inject as service } from '@ember/service';
 
 export default class EHHotspotComponent extends Component {
   @service router;
+  @service ehHotspots;
 
   get backgroundImageInfo() {
     return window.EH_IMAGES[this.args.src] ?? {};

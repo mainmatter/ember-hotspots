@@ -34,11 +34,29 @@
   cursor: pointer;
 }
 
-.eh-hotspot[role="button"]:not(.eh-hotspot--image):hover {
-  filter: brightness(130%), saturate(130%);
-  box-shadow: 0 5px 20px -10px rgba(0,0,0,1);
-}
-
 .eh-hotspot--pinned {
   position: fixed;
+}
+
+.eh-hotspot--highlight:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  opacity: 0;
+  background: #00f;
+  animation: eh-hotspots--hightlight 0.4s 0.6s ease forwards;
+  border-radius: 2px;
+}
+
+@keyframes eh-hotspots--hightlight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
+  }
 }

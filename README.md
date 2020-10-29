@@ -53,6 +53,10 @@ All images detected by the addon will be preloaded and added to the browsers
 prefetch list by default. This behavior can be configured in
 [the addons options][options].
 
+### The addon in use
+
+Clicking and holding the left mouse button or tapping and holding on a touch 
+device will reveal all hotspots in the document. 
 
 ## Demo
 
