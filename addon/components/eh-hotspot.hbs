@@ -1,3 +1,10 @@
-<button ...attributes type="button" class="eh-hotspot {{if @pinned "eh-hotspot--pinned"}}" style={{this.style}}>
+{{! template-lint-disable no-invalid-interactive --}}
+<div
+  ...attributes
+  class="eh-hotspot {{if @pinned "eh-hotspot--pinned"}} {{if @src "eh-hotspot--image"}}"
+  style={{this.style}}
+  role={{if this.isInteractive (if @route "link" "button")}}
+  {{on this.triggerEvent this.onTrigger}}
+>
   {{yield}}
-</button>
+</div>

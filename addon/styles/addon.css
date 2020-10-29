@@ -26,11 +26,15 @@
   position: absolute;
   box-shadow: 0 0 0 0 rgba(0,0,0,0);
   transition: box-shadow 0.3s;
-  background-color: red;
+  background-size: auto 100%;
   margin-left: calc(50% - 0.5 * var(--eh-background-width));
 }
 
-.eh-hotspot:hover {
+.eh-hotspot[role="button"] {
+  cursor: pointer;
+}
+
+.eh-hotspot[role="button"]:not(.eh-hotspot--image):hover {
   filter: brightness(130%), saturate(130%);
   box-shadow: 0 5px 20px -10px rgba(0,0,0,1);
 }
