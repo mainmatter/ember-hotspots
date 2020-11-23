@@ -7,12 +7,21 @@ export default class EHHotspotComponent extends Component {
   @service router;
   @service ehHotspots;
 
+  constructor() {
+    super(...arguments);
+
+    this.ehHotspots.load();
+  }
+
   get backgroundImageInfo() {
-    return window.EH_IMAGES[this.args.src] ?? {};
+    return this.ehHotspots.data[this.args.src] ?? {};
   }
 
   get imageMissing() {
-    return this.backgroundImageInfo.width === undefined;
+    return (
+      this.ehHotspots.data !== undefined &&
+      this.backgroundImageInfo.width === undefined
+    );
   }
 
   get isInteractive() {
