@@ -29,9 +29,34 @@ module.exports = {
     return new SizeUpImages(this.app.trees.public, this._options);
   },
 
-  contentFor(type) {
-    if (type === 'head-footer') {
-      return `<script src="/assets/eh-images.js"></script>`;
+  contentFor(type, app) {
+    if (
+      type === 'head-footer' &&
+      this._options.prefetch &&
+      app.environment === 'production'
+    ) {
+      const cwd = path.join(
+        process.cwd(),
+        this.app.trees.public,
+        this._options.cwd
+      );
+      const files = glob
+        .sync(this._options.glob, {
+          cwd,
+        })
+        .reduce(
+          (acc, file) => ({
+            ...acc,
+            [file]: imageStats(path.join(cwd, file)),
+          }),
+          {}
+        );
+
+      return `${Object.keys(files).reduce(
+        (acc, filename) =>
+          `${acc}\n<link rel="preload" href="/${filename}" as="image">`,
+        ''
+      )}\n`;
     }
 
     return '';
