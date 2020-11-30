@@ -1,0 +1,15 @@
+{
+  "assets": {
+    "Home@2x-2efe0b8743161c11eeaea58df811d32a.png": "Home@2x-2efe0b8743161c11eeaea58df811d32a.png",
+    "Menu@2x-f79f627a54338aec6f8d95ffdbed161e.png": "Menu@2x-f79f627a54338aec6f8d95ffdbed161e.png",
+    "assets/assetMap.json": "assets/assetMap.json",
+    "assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css": "assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css",
+    "assets/dummy-0a8308d78b4223e08b0b5ce49877d5a5.js": "assets/dummy-0a8308d78b4223e08b0b5ce49877d5a5.js",
+    "assets/eh-hotspots-95be53c494cde578defb2513967592b3.json": "assets/eh-hotspots-95be53c494cde578defb2513967592b3.json",
+    "assets/vendor-d8b8d4f1654fb05fba59383f853e8c7a.css": "assets/vendor-d8b8d4f1654fb05fba59383f853e8c7a.css",
+    "assets/vendor-f721fd6a3a3cd0d3914a6ea1c458dca7.js": "assets/vendor-f721fd6a3a3cd0d3914a6ea1c458dca7.js",
+    "button-get-started@2x-fdfca9fb60e69397ac126aa8195ff13d.png": "button-get-started@2x-fdfca9fb60e69397ac126aa8195ff13d.png",
+    "button-install-cargo@2x-5abe4e014ffa94a7e7b3eea2e3071cee.png": "button-install-cargo@2x-5abe4e014ffa94a7e7b3eea2e3071cee.png"
+  },
+  "prepend": ""
+}
