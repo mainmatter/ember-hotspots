@@ -1,6 +1,7 @@
 'use strict';
 
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+const assetRevDefaults = require('broccoli-asset-rev/lib/default-options');
 
 module.exports = function(defaults) {
   let app = new EmberAddon(defaults, {
@@ -8,6 +9,13 @@ module.exports = function(defaults) {
       cwd: '/',
       prefetch: true,
       preload: true,
+    },
+
+    fingerprint: {
+      extensions: [...assetRevDefaults.extensions, 'svg', 'json'],
+      replaceExtensions: [...assetRevDefaults.replaceExtensions, 'json'],
+      generateAssetMap: true,
+      prepend: '/ember-hotspots/',
     },
   });
 

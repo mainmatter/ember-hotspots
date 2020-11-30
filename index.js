@@ -17,7 +17,7 @@ module.exports = {
       preload: true,
       prefetch: true,
       glob: '**/*.{gif,jpg,png,svg}',
-      ...(app.options['ember-hotspots'] ?? {}),
+      ...(app.options['ember-hotspots'] || {}),
     };
   },
 

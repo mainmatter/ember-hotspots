@@ -1,7 +1,26 @@
 <EhBackground @src="Home@2x.png">
-  <EhHotspot @rect={{array 0 0 200 200}} @pinned={{true}} />
-  <EhHotspot @rect={{array 500 0 200 200}} @pinned={{false}} />
+  {{#if this.showMenu}}
+    <EhHotspot @rect={{array 40 40}} @src="Menu@2x.png" />
+  {{/if}}
 
+  <EhHotspot
+    @rect={{array 1135 15 100 50}}
+    @action={{fn (mut this.showMenu) (not this.showMenu)}}
+  />
+
+  <EhHotspot
+    @rect={{array 341 671 304 90}}
+    @src={{if this.btnCargoHover "button-install-cargo@2x.png"}}
+    @action={{fn (mut this.btnCargoHover) (not this.btnCargoHover)}}
+    @trigger="hover"
+  />
+
+  <EhHotspot
+    @rect={{array 655 671 290 90}}
+    @src={{if this.btnGetStartedHover "button-get-started@2x.png"}}
+    @action={{fn (mut this.btnGetStartedHover) (not this.btnGetStartedHover)}}
+    @trigger="hover"
+  />
 </EhBackground>
 
 {{outlet}}
