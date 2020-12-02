@@ -1,15 +1,15 @@
 {
   "assets": {
-    "/Home@2x-2efe0b8743161c11eeaea58df811d32a.png": "Home@2x-2efe0b8743161c11eeaea58df811d32a.png",
-    "/Menu@2x-f79f627a54338aec6f8d95ffdbed161e.png": "Menu@2x-f79f627a54338aec6f8d95ffdbed161e.png",
-    "/assets/assets/assets/assetMap.json": "/assets/assets/assets/assetMap.json",
-    "/assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css": "assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css",
-    "/assets/dummy-16438f638e11c1a45313c7487bd48ebc.js": "assets/dummy-16438f638e11c1a45313c7487bd48ebc.js",
-    "/assets/eh-hotspots-a22c2758f52fedb22c42115ec3d2fd48.json": "assets/eh-hotspots-a22c2758f52fedb22c42115ec3d2fd48.json",
-    "/assets/vendor-d8b8d4f1654fb05fba59383f853e8c7a.css": "assets/vendor-d8b8d4f1654fb05fba59383f853e8c7a.css",
-    "/assets/vendor-f721fd6a3a3cd0d3914a6ea1c458dca7.js": "assets/vendor-f721fd6a3a3cd0d3914a6ea1c458dca7.js",
-    "/button-get-started@2x-fdfca9fb60e69397ac126aa8195ff13d.png": "button-get-started@2x-fdfca9fb60e69397ac126aa8195ff13d.png",
-    "/button-install-cargo@2x-5abe4e014ffa94a7e7b3eea2e3071cee.png": "button-install-cargo@2x-5abe4e014ffa94a7e7b3eea2e3071cee.png"
+    "/ember-hotspots/Home@2x-2efe0b8743161c11eeaea58df811d32a.png": "Home@2x-2efe0b8743161c11eeaea58df811d32a.png",
+    "/ember-hotspots/Menu@2x-f79f627a54338aec6f8d95ffdbed161e.png": "Menu@2x-f79f627a54338aec6f8d95ffdbed161e.png",
+    "/ember-hotspots/assets/assets/assets/assetMap.json": "/ember-hotspots/assets/assets/assets/assetMap.json",
+    "/ember-hotspots/assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css": "assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css",
+    "/ember-hotspots/assets/dummy-b6b2a15d45957b8222b0b60449bba4f3.js": "assets/dummy-b6b2a15d45957b8222b0b60449bba4f3.js",
+    "/ember-hotspots/assets/eh-hotspots-f837b62e4d3faa360a8e1513bc9bb151.json": "assets/eh-hotspots-f837b62e4d3faa360a8e1513bc9bb151.json",
+    "/ember-hotspots/assets/vendor-d8b8d4f1654fb05fba59383f853e8c7a.css": "assets/vendor-d8b8d4f1654fb05fba59383f853e8c7a.css",
+    "/ember-hotspots/assets/vendor-f721fd6a3a3cd0d3914a6ea1c458dca7.js": "assets/vendor-f721fd6a3a3cd0d3914a6ea1c458dca7.js",
+    "/ember-hotspots/button-get-started@2x-fdfca9fb60e69397ac126aa8195ff13d.png": "button-get-started@2x-fdfca9fb60e69397ac126aa8195ff13d.png",
+    "/ember-hotspots/button-install-cargo@2x-5abe4e014ffa94a7e7b3eea2e3071cee.png": "button-install-cargo@2x-5abe4e014ffa94a7e7b3eea2e3071cee.png"
   },
-  "prepend": "/"
+  "prepend": "/ember-hotspots/"
 }
