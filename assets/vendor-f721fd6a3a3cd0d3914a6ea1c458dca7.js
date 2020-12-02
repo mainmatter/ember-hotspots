@@ -4303,7 +4303,7 @@ function g(){var e
 return c(this,g),l(m(e=v.apply(this,arguments)),"showHotspots",o,m(e)),l(m(e),"data",a,m(e)),e._globalShowCallback=function(t){return e.showHotspots=t.type.includes("down"),!0},document.addEventListener("mousedown",e._globalShowCallback),document.addEventListener("mouseup",e._globalShowCallback),document.addEventListener("touchdown",e._globalShowCallback),document.addEventListener("touchup",e._globalShowCallback),e}return n=g,(r=[{key:"willDestroy",value:function(){this._globalShowCallback&&(document.removeEventListener("mousedown",this._globalShowCallback),document.removeEventListener("mouseup",this._globalShowCallback),document.removeEventListener("touchdown",this._globalShowCallback),document.removeEventListener("touchup",this._globalShowCallback))}},{key:"load",value:(s=regeneratorRuntime.mark((function e(){var n,r
 return regeneratorRuntime.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!this.loaded){e.next=2
 break}return e.abrupt("return")
-case 2:return e.next=4,(0,t.default)("/ember-hotspots/assets/eh-hotspots-f837b62e4d3faa360a8e1513bc9bb151.json")
+case 2:return e.next=4,(0,t.default)("/assets/eh-hotspots-a22c2758f52fedb22c42115ec3d2fd48.json")
 case 4:return n=e.sent,e.next=7,n.json()
 case 7:r=e.sent,this.data=r
 case 9:case"end":return e.stop()}}),e,this)})),d=function(){var e=this,t=arguments
