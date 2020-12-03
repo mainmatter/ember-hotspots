@@ -3,7 +3,7 @@
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 const assetRevDefaults = require('broccoli-asset-rev/lib/default-options');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   let app = new EmberAddon(defaults, {
     'ember-hotspots': {
       cwd: '/',

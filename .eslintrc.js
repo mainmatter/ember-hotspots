@@ -10,8 +10,13 @@ module.exports = {
       legacyDecorators: true,
     },
   },
-  plugins: ['ember'],
-  extends: ['eslint:recommended', 'plugin:ember/recommended', 'prettier'],
+  plugins: ['ember', 'prettier', 'eslint-plugin-qunit'],
+  extends: [
+    'eslint:recommended',
+    'plugin:ember/recommended',
+    'plugin:prettier/recommended',
+    'plugin:qunit/recommended',
+  ],
   env: {
     browser: true,
   },
