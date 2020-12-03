@@ -38,7 +38,9 @@ module('Integration | Component | eh-background', function (hooks) {
     assert.dom('[data-test-eh-background]').hasText('content');
     assert.dom('[data-test-eh-background]').hasStyle({
       height: '2828px',
-      'background-image': 'url("http://localhost:4200/foo.jpg")',
+      'background-image': `url("${
+        window.location.href.split('/index.html')[0]
+      }/foo.jpg")`,
     });
   });
 });

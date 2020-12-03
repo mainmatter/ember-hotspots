@@ -6,6 +6,7 @@
 /bower_components/
 
 # misc
+.gitkeep
 /.bowerrc
 /.editorconfig
 /.ember-cli
@@ -13,9 +14,12 @@
 /.eslintignore
 /.eslintrc.js
 /.git/
+/.github
 /.gitignore
+/.prettierrc.js
 /.template-lintrc.js
 /.travis.yml
+/.vercel
 /.watchmanconfig
 /bower.json
 /config/ember-try.js
@@ -24,7 +28,6 @@
 /testem.js
 /tests/
 /yarn.lock
-.gitkeep
 
 # ember-try
 /.node_modules.ember-try/

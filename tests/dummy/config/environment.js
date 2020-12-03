@@ -4,7 +4,8 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'dummy',
     environment,
-    rootURL: process.env.CI ? '/ember-hotspots/' : '',
+    rootURL:
+      process.env.CI && environment === 'production' ? '/ember-hotspots/' : '/',
     locationType: 'hash',
     EmberENV: {
       FEATURES: {

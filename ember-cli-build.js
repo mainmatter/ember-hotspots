@@ -14,8 +14,7 @@ module.exports = function (defaults) {
     fingerprint: {
       extensions: [...assetRevDefaults.extensions, 'svg', 'json'],
       replaceExtensions: [...assetRevDefaults.replaceExtensions, 'json'],
-      generateAssetMap: true,
-      prepend: '/ember-hotspots/',
+      prepend: process.env.CI === 'production' ? '/ember-hotspots/' : '',
     },
   });
 
