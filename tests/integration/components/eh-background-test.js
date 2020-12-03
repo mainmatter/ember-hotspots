@@ -2,25 +2,43 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
+import Service from '@ember/service';
 
 module('Integration | Component | eh-background', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    assert.expect(4);
 
-    await render(hbs`<EhBackground />`);
+    this.owner.register(
+      'service:eh-hotspots',
+      class MockService extends Service {
+        load() {
+          assert.ok(true);
+        }
 
-    assert.equal(this.element.textContent.trim(), '');
+        data = {
+          'foo.jpg': {
+            width: 1300,
+            height: 2828,
+            size: 452192,
+            isRetina: true,
+          },
+        };
+      }
+    );
 
-    // Template block usage:
     await render(hbs`
-      <EhBackground>
-        template block text
+      <EhBackground @src="foo.jpg">
+        content
       </EhBackground>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('[data-test-eh-background]').exists();
+    assert.dom('[data-test-eh-background]').hasText('content');
+    assert.dom('[data-test-eh-background]').hasStyle({
+      height: '2828px',
+      'background-image': 'url("http://localhost:4200/foo.jpg")',
+    });
   });
 });
