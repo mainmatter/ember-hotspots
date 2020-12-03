@@ -100,7 +100,9 @@ module('Integration | Component | eh-hotspot', function (hooks) {
       height: '400px',
       top: '50px',
       left: '20px',
-      'background-image': 'url("http://localhost:4200/bar.jpg")',
+      'background-image': `url("${
+        window.location.href.split('/index.html')[0]
+      }/bar.jpg")`,
     });
   });
 
