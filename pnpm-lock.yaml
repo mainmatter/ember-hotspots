@@ -24,6 +24,7 @@ specifiers:
   ember-disable-prototype-extensions: 1.1.3
   ember-export-application-global: 2.0.1
   ember-fetch: 8.1.1
+  ember-get-config: 2.0.0
   ember-load-initializers: 2.1.2
   ember-page-title: 7.0.0
   ember-qunit: 5.1.5
@@ -82,6 +83,7 @@ devDependencies:
   ember-cli-terser: 4.0.2
   ember-disable-prototype-extensions: 1.1.3
   ember-export-application-global: 2.0.1
+  ember-get-config: 2.0.0
   ember-load-initializers: 2.1.2
   ember-page-title: 7.0.0
   ember-qunit: 5.1.5_68c27f1128862f3e803be47c98c5e80a
@@ -5075,6 +5077,16 @@ packages:
       - encoding
       - supports-color
     dev: false
+
+  /ember-get-config/2.0.0:
+    resolution: {integrity: sha512-FdT1iuldJZ8TRweh+wO9wcT86uVbW117aME6WCM+S0lPp282XH+3/aWVDD0hmcbBQC3aEV/Rs/vOv1mjBfeR0w==}
+    engines: {node: 12.* || 14.* || >= 16}
+    dependencies:
+      '@embroider/macros': 1.6.0
+      ember-cli-babel: 7.26.11
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /ember-load-initializers/2.1.2:
     resolution: {integrity: sha512-CYR+U/wRxLbrfYN3dh+0Tb6mFaxJKfdyz+wNql6cqTrA0BBi9k6J3AaKXj273TqvEpyyXegQFFkZEiuZdYtgJw==}
@@ -11622,7 +11634,7 @@ packages:
       is-yarn-global: 0.3.0
       latest-version: 5.1.0
       pupa: 2.1.1
-      semver: 7.3.5
+      semver: 7.3.7
       semver-diff: 3.1.1
       xdg-basedir: 4.0.0
     dev: true
