@@ -2,7 +2,7 @@ import Component from '@glimmer/component';
 import { htmlSafe } from '@ember/template';
 import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
-import config from 'ember-get-config';
+import { getOwner } from '@ember/application';
 
 export default class EHHotspotComponent extends Component {
   @service router;
@@ -42,12 +42,12 @@ export default class EHHotspotComponent extends Component {
 
   get style() {
     const { x, y, width, height } = this.rect;
-
     const styles = [`top:${y}px`, `left:${x}px`];
 
     if (this.args.src) {
       const { width: imageWidth, height: imageHeight } =
         this.backgroundImageInfo;
+      const config = getOwner(this).resolveRegistration('config:environment');
       const src = config.rootURL + this.args.src;
 
       styles.push(
