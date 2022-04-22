@@ -6,7 +6,8 @@ module.exports = function (environment) {
     environment,
     rootURL:
       process.env.CI && environment === 'production' ? '/ember-hotspots/' : '/',
-    locationType: 'hash',
+    locationType:
+      process.env.CI && environment === 'production' ? 'hash' : 'history',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

@@ -46,13 +46,11 @@ module('Integration | Component | eh-hotspot', function (hooks) {
   });
 
   test('it renders a linked hotspot', async function (assert) {
-    assert.expect(4);
-
     this.owner.register(
       'service:router',
       class MockService extends Service {
         transitionTo(route) {
-          assert.equal(route, 'index');
+          assert.step(route);
         }
       }
     );
@@ -69,6 +67,8 @@ module('Integration | Component | eh-hotspot', function (hooks) {
     assert.dom('[data-test-eh-hotspot]').hasAttribute('role', 'link');
 
     await click('[data-test-eh-hotspot]');
+
+    assert.verifySteps(['index']);
   });
 
   test('it renders an hotspot defined by an image', async function (assert) {
@@ -100,9 +100,7 @@ module('Integration | Component | eh-hotspot', function (hooks) {
       height: '400px',
       top: '50px',
       left: '20px',
-      'background-image': `url("${
-        window.location.href.split('/index.html')[0]
-      }/bar.jpg")`,
+      'background-image': `url("${window.location.origin}/bar.jpg")`,
     });
   });
 
