@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 import { htmlSafe } from '@ember/template';
 import { inject as service } from '@ember/service';
-import config from 'ember-get-config';
+import { getOwner } from '@ember/application';
 
 export default class EHBackgroundComponent extends Component {
   @service ehHotspots;
@@ -25,6 +25,7 @@ export default class EHBackgroundComponent extends Component {
 
   get style() {
     const { width, height } = this.backgroundImageInfo;
+    const config = getOwner(this).resolveRegistration('config:environment');
     const src = config.rootURL + this.args.src;
     const styles = [
       `background-image:url(${src})`,
