@@ -1,7 +1,7 @@
 import Service from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import fetch from 'fetch';
-import { getOwner } from '@ember/application';
+import config from 'ember-get-config';
 
 export default class EhHotspotsService extends Service {
   @tracked showHotspots = false;
@@ -41,7 +41,6 @@ export default class EhHotspotsService extends Service {
     }
 
     try {
-      const config = getOwner(this).resolveRegistration('config:environment');
       const file = 'assets/eh-hotspots.json';
       const res = await fetch(`${config.rootURL}${file}`);
       const data = await res.json();
