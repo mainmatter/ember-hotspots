@@ -45,10 +45,8 @@ export default class EHHotspotComponent extends Component {
     const styles = [`top:${y}px`, `left:${x}px`];
 
     if (this.args.src) {
-      const {
-        width: imageWidth,
-        height: imageHeight,
-      } = this.backgroundImageInfo;
+      const { width: imageWidth, height: imageHeight } =
+        this.backgroundImageInfo;
 
       styles.push(
         `width:${imageWidth}px`,
