@@ -1,6 +1,6 @@
 {
   "name": "ember-hotspots",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Create interactive prototypes from scratch and design mockups using little code but the full power of the Ember.js ecosystem.",
   "keywords": [
     "ember-addon"
