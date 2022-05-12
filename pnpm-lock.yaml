@@ -40,7 +40,7 @@ specifiers:
   eslint-plugin-node: 11.1.0
   eslint-plugin-prettier: 4.0.0
   eslint-plugin-qunit: 7.2.0
-  glob: 8.0.1
+  glob: 8.0.2
   image-size: 1.0.1
   loader.js: 4.7.0
   mkdirp: 1.0.4
@@ -62,7 +62,7 @@ dependencies:
   ember-cli-babel: 7.26.11
   ember-cli-htmlbars: 6.0.1
   ember-fetch: 8.1.1
-  glob: 8.0.1
+  glob: 8.0.2
   image-size: 1.0.1
   mkdirp: 1.0.4
   walk-sync: 3.0.0
@@ -6952,8 +6952,8 @@ packages:
       once: 1.4.0
       path-is-absolute: 1.0.1
 
-  /glob/8.0.1:
-    resolution: {integrity: sha512-cF7FYZZ47YzmCu7dDy50xSRRfO3ErRfrXuLZcNIuyiJEco0XSrGtuilG19L5xp3NcwTx7Gn+X6Tv3fmsUPTbow==}
+  /glob/8.0.2:
+    resolution: {integrity: sha512-0jzor6jfIKaDg/2FIN+9L8oDxzHTkI/+vwJimOmOZjaVjFVVZJFojOYbbWC0okXbBVSgYpbcuQ7xy6gDP9f8gw==}
     engines: {node: '>=12'}
     dependencies:
       fs.realpath: 1.0.0
@@ -6961,7 +6961,6 @@ packages:
       inherits: 2.0.4
       minimatch: 5.0.1
       once: 1.4.0
-      path-is-absolute: 1.0.1
     dev: false
 
   /global-dirs/3.0.0:
