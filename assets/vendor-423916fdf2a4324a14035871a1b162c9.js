@@ -3753,7 +3753,7 @@ Object.defineProperty(e,"__esModule",{value:!0}),e.default=function(e){return e?
 function t(e){return n.packages[e]}function r(){return n.global}Object.defineProperty(e,"__esModule",{value:!0}),e.config=t,e.each=function(e){if(!Array.isArray(e))throw new Error("the argument to the each() macro must be an array")
 return e},e.getGlobalConfig=r,e.isTesting=function(){let e=n.global,t=e&&e["@embroider/macros"]
 return Boolean(t&&t.isTesting)},e.macroCondition=function(e){return e}
-const n={packages:{"/home/runner/work/ember-hotspots/ember-hotspots/node_modules/.pnpm/ember-get-config@2.0.0/node_modules/ember-get-config":{modulePrefix:"dummy"}},global:{"@embroider/macros":{isTesting:!1}}}
+const n={packages:{"/home/runner/work/ember-hotspots/ember-hotspots/node_modules/.pnpm/ember-get-config@2.1.0/node_modules/ember-get-config":{modulePrefix:"dummy"}},global:{"@embroider/macros":{isTesting:!1}}}
 let i="undefined"!=typeof window?window._embroider_macros_runtime_config:void 0
 if(i){let e={config:t,getGlobalConfig:r,setConfig(e,t){n.packages[e]=t},setGlobalConfig(e,t){n.global[e]=t}}
 for(let t of i)t(e)}})),define("@embroider/util/ember-private-api",["exports","@embroider/macros/es-compat"],(function(e,t){"use strict"
@@ -3815,10 +3815,10 @@ else i(n,a,s)
 else if(Array.isArray(s))for(o=0,u=s.length;o<u;o++)i(n,s[o].name,s[o].value)
 else for(l in s)e(l,s[l])
 return n}("",e).join("&").replace(/%20/g,"+")}function i(e,t,r){void 0!==r&&(null===r&&(r=""),r="function"==typeof r?r():r,e[e.length]=`${encodeURIComponent(t)}=${encodeURIComponent(r)}`)}var a=n
-e.default=a})),define("ember-get-config/index",["exports","@embroider/macros/es-compat"],(function(e,t){"use strict"
+e.default=a})),define("ember-get-config/index",["exports"],(function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var r=(0,t.default)(require("dummy/config/environment")).default
-e.default=r})),define("ember-hotspots/components/eh-background",["exports","@ember/component","@ember/template-factory","@glimmer/component","@ember/template","@ember/service","ember-get-config"],(function(e,t,r,n,i,a,s){"use strict"
+var t=require("dummy/config/environment").default
+e.default=t})),define("ember-hotspots/components/eh-background",["exports","@ember/component","@ember/template-factory","@glimmer/component","@ember/template","@ember/service","ember-get-config"],(function(e,t,r,n,i,a,s){"use strict"
 var o,u
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 const l=(0,r.createTemplateFactory)({id:"JriXCIQ1",block:'[[[11,0],[17,1],[24,0,"eh-background"],[16,5,[30,0,["style"]]],[24,"data-test-eh-background",""],[12],[1,"\\n"],[41,[30,0,["imageMissing"]],[[[1,"    Asset not found: "],[1,[30,2]],[1,"\\n    "],[1,[54,["Asset not found:",[30,2]]]],[1,"\\n"]],[]],null],[1,"\\n  "],[18,3,null],[1,"\\n"],[13]],["&attrs","@src","&default"],false,["if","log","yield"]]',moduleName:"ember-hotspots/components/eh-background.hbs",isStrictMode:!1})
