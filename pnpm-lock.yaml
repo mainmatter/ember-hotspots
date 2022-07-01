@@ -24,7 +24,7 @@ specifiers:
   ember-disable-prototype-extensions: 1.1.3
   ember-export-application-global: 2.0.1
   ember-fetch: 8.1.1
-  ember-get-config: 2.1.0
+  ember-get-config: 2.1.1
   ember-load-initializers: 2.1.2
   ember-page-title: 7.0.0
   ember-qunit: 5.1.5
@@ -83,7 +83,7 @@ devDependencies:
   ember-cli-terser: 4.0.2
   ember-disable-prototype-extensions: 1.1.3
   ember-export-application-global: 2.0.1
-  ember-get-config: 2.1.0
+  ember-get-config: 2.1.1
   ember-load-initializers: 2.1.2
   ember-page-title: 7.0.0
   ember-qunit: 5.1.5_66aaf4259d52975831654068563a6d0a
@@ -5452,8 +5452,8 @@ packages:
       - supports-color
     dev: false
 
-  /ember-get-config/2.1.0:
-    resolution: {integrity: sha512-0OJ2Y4zI5+kgVqh7mD/8t1N+LoYrAO847j9sa970swW14IeU0EiiMZ1zwJ7zEhAB7scf7wJyWEHO1ESXgY508Q==}
+  /ember-get-config/2.1.1:
+    resolution: {integrity: sha512-uNmv1cPG/4qsac8oIf5txJ2FZ8p88LEpG4P3dNcjsJS98Y8hd0GPMFwVqpnzI78Lz7VYRGQWY4jnE4qm5R3j4g==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       '@embroider/macros': 1.6.0
