@@ -3753,7 +3753,7 @@ Object.defineProperty(e,"__esModule",{value:!0}),e.default=function(e){return e?
 function t(e){return n.packages[e]}function r(){return n.global}Object.defineProperty(e,"__esModule",{value:!0}),e.config=t,e.each=function(e){if(!Array.isArray(e))throw new Error("the argument to the each() macro must be an array")
 return e},e.getGlobalConfig=r,e.isTesting=function(){let e=n.global,t=e&&e["@embroider/macros"]
 return Boolean(t&&t.isTesting)},e.macroCondition=function(e){return e}
-const n={packages:{"/home/runner/work/ember-hotspots/ember-hotspots/node_modules/.pnpm/ember-get-config@2.1.0/node_modules/ember-get-config":{modulePrefix:"dummy"}},global:{"@embroider/macros":{isTesting:!1}}}
+const n={packages:{"/home/runner/work/ember-hotspots/ember-hotspots/node_modules/.pnpm/ember-get-config@2.1.1/node_modules/ember-get-config":{modulePrefix:"dummy"}},global:{"@embroider/macros":{isTesting:!1}}}
 let i="undefined"!=typeof window?window._embroider_macros_runtime_config:void 0
 if(i){let e={config:t,getGlobalConfig:r,setConfig(e,t){n.packages[e]=t},setGlobalConfig(e,t){n.global[e]=t}}
 for(let t of i)t(e)}})),define("@embroider/util/ember-private-api",["exports","@embroider/macros/es-compat"],(function(e,t){"use strict"
