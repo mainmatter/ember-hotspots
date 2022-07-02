@@ -4,7 +4,7 @@ specifiers:
   '@babel/eslint-parser': 7.18.2
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1
-  '@embroider/test-setup': 1.8.0
+  '@embroider/test-setup': 1.8.1
   '@glimmer/component': 1.1.2
   '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
@@ -71,7 +71,7 @@ devDependencies:
   '@babel/eslint-parser': 7.18.2_eslint@8.18.0
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1_ember-source@4.5.0
-  '@embroider/test-setup': 1.8.0
+  '@embroider/test-setup': 1.8.1
   '@glimmer/component': 1.1.2
   '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
@@ -1390,12 +1390,12 @@ packages:
       typescript-memoize: 1.1.0
     dev: true
 
-  /@embroider/test-setup/1.8.0:
-    resolution: {integrity: sha512-ooD7oDFH7/OMAtRuE4PKqNcjYLZAg/EF/tDaYY1xFGbllELm99bjp1s2Sr5UTsWxH8Pl69C+G4GJN2BJmGGOfA==}
+  /@embroider/test-setup/1.8.1:
+    resolution: {integrity: sha512-pELZvAWbjuJQmCXb2olCEoHYytzVDr84H63IY0VJXK1UdEFeJN1vjjata2n+DPZanj8Le5nm/SuJlkMQQOknZA==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       lodash: 4.17.21
-      resolve: 1.22.0
+      resolve: 1.22.1
     dev: true
 
   /@embroider/util/1.6.0_ember-source@4.5.0:
@@ -5160,7 +5160,7 @@ packages:
       ember-cli-babel-plugin-helpers: 1.1.1
       execa: 1.0.0
       fs-extra: 7.0.1
-      resolve: 1.22.0
+      resolve: 1.22.1
       rsvp: 4.8.5
       semver: 6.3.0
       stagehand: 1.0.0
@@ -10693,7 +10693,7 @@ packages:
     resolution: {integrity: sha512-fVEKHGeK85bGbVFuwO9o1aU0n3vqQGrezPc51JGu9UTXpFQfWq5qCeKxyaRUSvephs+06c5j5rPq/dzHGEo8+Q==}
     dependencies:
       path-root: 0.1.1
-      resolve: 1.22.0
+      resolve: 1.22.1
 
   /resolve-package-path/2.0.0:
     resolution: {integrity: sha512-/CLuzodHO2wyyHTzls5Qr+EFeG6RcW4u6//gjYvUfcfyuplIX1SSccU+A5A9A78Gmezkl3NBkFAMxLbzTY9TJA==}
