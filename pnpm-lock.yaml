@@ -23,7 +23,7 @@ specifiers:
   ember-cli-terser: 4.0.2
   ember-disable-prototype-extensions: 1.1.3
   ember-export-application-global: 2.0.1
-  ember-fetch: 8.1.1
+  ember-fetch: 8.1.2
   ember-get-config: 2.1.1
   ember-load-initializers: 2.1.2
   ember-page-title: 7.0.0
@@ -61,7 +61,7 @@ dependencies:
   broccoli-stew: 3.0.0
   ember-cli-babel: 7.26.11
   ember-cli-htmlbars: 6.1.0
-  ember-fetch: 8.1.1
+  ember-fetch: 8.1.2
   glob: 8.0.3
   image-size: 1.0.2
   mkdirp: 1.0.4
@@ -6423,8 +6423,8 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
-  /ember-fetch/8.1.1:
-    resolution: {integrity: sha512-Xi1wNmPtVmfIoFH675AA0ELIdYUcoZ2p+6j9c8eDFjiGJiFesyp01bDtl5ryBI/1VPOByJLsDkT+4C11HixsJw==}
+  /ember-fetch/8.1.2:
+    resolution: {integrity: sha512-TVx24/jrvDIuPL296DV0hBwp7BWLcSMf0I8464KGz01sPytAB+ZAePbc9ooBTJDkKZEGFgatJa4nj3yF1S9Bpw==}
     engines: {node: '>= 10'}
     dependencies:
       abortcontroller-polyfill: 1.7.3
@@ -9472,7 +9472,7 @@ packages:
     dev: true
 
   /lodash.memoize/4.1.2:
-    resolution: {integrity: sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=}
+    resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
     dev: false
 
   /lodash.merge/4.6.2:
@@ -10818,7 +10818,7 @@ packages:
     dev: true
 
   /parse-ms/1.0.1:
-    resolution: {integrity: sha1-VjRtR0nXjyNDDKDHE4UK75GqNh0=}
+    resolution: {integrity: sha512-LpH1Cf5EYuVjkBvCDBYvkUPh+iv2bk3FHflxHkpCYT0/FZ1d3N3uJaLiHr4yGuMcFUhv6eAivitTvWZI4B/chg==}
     engines: {node: '>=0.10.0'}
     dev: false
 
@@ -11687,7 +11687,7 @@ packages:
     dev: true
 
   /require-relative/0.8.7:
-    resolution: {integrity: sha1-eZlTn8ngR6N5KPoZb44VY9q9Nt4=}
+    resolution: {integrity: sha512-AKGr4qvHiryxRb19m3PsLRGuKVAbJLUD7E6eOaHkfKhwc+vSgVOCY5xNvm9EkolBKTOf0GrQAZKLimOCz81Khg==}
     dev: false
 
   /requireindex/1.2.0:
@@ -12968,7 +12968,7 @@ packages:
     dev: true
 
   /time-zone/1.0.0:
-    resolution: {integrity: sha1-mcW/VZWJZq9tBtg73zgA3IL67F0=}
+    resolution: {integrity: sha512-TIsDdtKo6+XrPtiTm1ssmMngN1sAhyKnTO2kunQWqNPWIVvCm15Wmw4SWInwTVgJ5u/Tr04+8Ei9TNcw4x4ONA==}
     engines: {node: '>=4'}
     dev: false
 
@@ -13085,7 +13085,7 @@ packages:
     dev: true
 
   /tr46/0.0.3:
-    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
   /tree-sync/1.4.0:
     resolution: {integrity: sha512-YvYllqh3qrR5TAYZZTXdspnIhlKAYezPYw11ntmweoceu4VK+keN356phHRIIo1d+RDmLpHZrUlmxga2gc9kSQ==}
@@ -13548,7 +13548,7 @@ packages:
     dev: true
 
   /webidl-conversions/3.0.1:
-    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
   /webpack-sources/1.4.3:
     resolution: {integrity: sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==}
@@ -13661,7 +13661,7 @@ packages:
     dev: false
 
   /whatwg-url/5.0.0:
-    resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
