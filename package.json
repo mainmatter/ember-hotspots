@@ -39,7 +39,7 @@
     "broccoli-stew": "3.0.0",
     "ember-cli-babel": "7.26.11",
     "ember-cli-htmlbars": "6.1.0",
-    "ember-fetch": "8.1.1",
+    "ember-fetch": "8.1.2",
     "glob": "8.0.3",
     "image-size": "1.0.2",
     "mkdirp": "1.0.4",
