@@ -255,5 +255,5 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
 
 ## License
 
-Ember Hotspots is developed by and © simplabs GmbH and contributors. It is
+Ember Hotspots is developed by and © [Mainmatter GmbH](http://mainmatter.com) and contributors. It is
 released under the [MIT License](LICENSE.md).
