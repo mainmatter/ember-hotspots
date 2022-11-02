@@ -33,7 +33,7 @@ if(!r||"new"===r.state)return(r=new o(e,[],u,null)).module.exports=t,r.state="fi
  *            Portions Copyright 2008-2011 Apple Inc. All rights reserved.
  * @license   Licensed under MIT license
  *            See https://raw.github.com/emberjs/ember.js/master/LICENSE
- * @version   4.8.0
+ * @version   4.8.1
  */
 var e,t;(function(){var r="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:null
 if(null===r)throw new Error("unable to locate global object")
@@ -685,12 +685,13 @@ u&&o.teardown(e,r,s),se(n)?ge(e,r,n,s):null==n?be(e,r,i,u,!0):Object.definePrope
 return i=r(e,t,void 0,n),Object.defineProperty(e,t,i),r}function be(e,t,r,n,i){return void 0===i&&(i=!0),!0===n||!1===i?Object.defineProperty(e,t,{configurable:!0,enumerable:i,writable:!0,value:r}):e[t]=r,r}var ye=new r.Cache(1e3,(e=>e.indexOf(".")))
 function _e(e){return"string"==typeof e&&-1!==ye.get(e)}var we=(0,r.symbol)("PROXY_CONTENT")
 function Ee(e){return"object"==typeof e&&null!==e&&"function"==typeof e.unknownProperty}function Oe(e,t){return _e(t)?Te(e,t):Re(e,t)}function Re(e,t){var n
-if(null!=e)return"object"==typeof e||"function"==typeof e?(void 0===(n=e[t])&&"object"==typeof e&&!(t in e)&&Ee(e)&&(n=e.unknownProperty(t)),(0,o.isTracking)()&&((0,o.consumeTag)((0,o.tagFor)(e,t)),(Array.isArray(n)||(0,r.isEmberArray)(n))&&(0,o.consumeTag)((0,o.tagFor)(n,"[]")))):n=e[t],n}function Te(e,t){var r="string"==typeof t?t.split("."):t
-for(var n of r){if(null==e||e.isDestroyed)return
-e=Re(e,n)}return e}e.PROXY_CONTENT=we,Re("foo","a"),Re("foo",1),Re({},"a"),Re({},1),Re({unknownProperty(){}},"a"),Re({unknownProperty(){}},1),Oe({},"foo"),Oe({},"foo.bar")
+if(null!=e)return"object"==typeof e||"function"==typeof e?(void 0===(n=e[t])&&"object"==typeof e&&!(t in e)&&Ee(e)&&(n=e.unknownProperty(t)),(0,o.isTracking)()&&((0,o.consumeTag)((0,o.tagFor)(e,t)),(Array.isArray(n)||(0,r.isEmberArray)(n))&&(0,o.consumeTag)((0,o.tagFor)(n,"[]")))):n=e[t],n}function Te(e,t,r){var n="string"==typeof t?t.split("."):t
+for(var i of n){if(null==e||e.isDestroyed)return
+if(r&&("__proto__"===i||"constructor"===i))return
+e=Re(e,i)}return e}e.PROXY_CONTENT=we,Re("foo","a"),Re("foo",1),Re({},"a"),Re({},1),Re({unknownProperty(){}},"a"),Re({unknownProperty(){}},1),Oe({},"foo"),Oe({},"foo.bar")
 var Pe={}
 function Ce(e,t,r,n){return e.isDestroyed?r:_e(t)?ke(e,t,r,n):Ae(e,t,r)}function Ae(e,t,n){var i,a=(0,r.lookupDescriptor)(e,t)
-return null!==a&&te.has(a.set)?(e[t]=n,n):(void 0!==(i=e[t])||"object"!=typeof e||t in e||"function"!=typeof e.setUnknownProperty?(e[t]=n,i!==n&&I(e,t)):e.setUnknownProperty(t,n),n)}function ke(e,t,r,n){var i=t.split("."),a=i.pop(),s=Te(e,i)
+return null!==a&&te.has(a.set)?(e[t]=n,n):(void 0!==(i=e[t])||"object"!=typeof e||t in e||"function"!=typeof e.setUnknownProperty?(e[t]=n,i!==n&&I(e,t)):e.setUnknownProperty(t,n),n)}function ke(e,t,r,n){var i=t.split("."),a=i.pop(),s=Te(e,i,!0)
 if(null!=s)return Ce(s,a,r)
 if(!n)throw new c.default(`Property set failed: object in path "${i.join(".")}" could not be found.`)}(0,r.setProxy)(Pe),(0,o.track)((()=>Re({},"a"))),(0,o.track)((()=>Re({},1))),(0,o.track)((()=>Re({a:[]},"a"))),(0,o.track)((()=>Re({a:Pe},"a")))
 class xe extends Function{readOnly(){return ae(this).readOnly(),this}oneWay(){return ae(this).oneWay(),this}meta(e){var t=ae(this)
@@ -3265,7 +3266,7 @@ return n.Adapter=i,n.QUnitAdapter=a,Object.defineProperty(re,"Test",{configurabl
 var ue=re
 t.default=ue})),e("ember/version",["exports"],(function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-e.default="4.8.0"})),e("route-recognizer",["exports"],(function(e){"use strict"
+e.default="4.8.1"})),e("route-recognizer",["exports"],(function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 var t=Object.create
 function r(){var e=t(null)
