@@ -40,7 +40,7 @@ specifiers:
   eslint-plugin-node: 11.1.0
   eslint-plugin-prettier: 4.2.1
   eslint-plugin-qunit: 7.3.4
-  glob: 8.0.3
+  glob: 8.1.0
   image-size: 1.0.2
   loader.js: 4.7.0
   mkdirp: 1.0.4
@@ -62,7 +62,7 @@ dependencies:
   ember-cli-babel: 7.26.11
   ember-cli-htmlbars: 6.1.1
   ember-fetch: 8.1.2
-  glob: 8.0.3
+  glob: 8.1.0
   image-size: 1.0.2
   mkdirp: 1.0.4
   walk-sync: 3.0.0
@@ -4768,7 +4768,7 @@ packages:
       fs-tree-diff: 2.0.1
       get-caller-file: 2.0.5
       git-repo-info: 2.1.1
-      glob: 8.0.3
+      glob: 8.1.0
       heimdalljs: 0.2.6
       heimdalljs-fs-monitor: 1.1.1
       heimdalljs-graph: 1.0.0
@@ -6430,8 +6430,8 @@ packages:
       once: 1.4.0
       path-is-absolute: 1.0.1
 
-  /glob/8.0.3:
-    resolution: {integrity: sha512-ull455NHSHI/Y1FqGaaYFaLGkNMMJbavMrEGFXG/PGrg6y7sutWHUHrz6gy6WEBH6akM1M414dWKCNs+IhKdiQ==}
+  /glob/8.1.0:
+    resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
     dependencies:
       fs.realpath: 1.0.0
