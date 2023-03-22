@@ -42,7 +42,7 @@
     "ember-fetch": "8.1.2",
     "glob": "8.1.0",
     "image-size": "1.0.2",
-    "mkdirp": "1.0.4",
+    "mkdirp": "2.1.6",
     "walk-sync": "3.0.0"
   },
   "devDependencies": {
