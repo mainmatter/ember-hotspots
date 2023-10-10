@@ -3,6 +3,10 @@
 Create interactive prototypes from scratch and design mockups using little code
 but the full power of the Ember.js ecosystem.
 
+> [!NOTE]
+> ember-hotspots was written and is maintained by [Mainmatter](https://mainmatter.com) and contributors.
+> We offer consulting, training, and team augmentation for Ember.js – check out our [website](https://mainmatter.com/ember-consulting/) to learn more!
+
 TODO: Add animation showing the addon in use
 
 ## Compatibility
