@@ -27,7 +27,7 @@ specifiers:
   ember-get-config: 2.1.1
   ember-load-initializers: 2.1.2
   ember-page-title: 7.0.0
-  ember-qunit: 6.0.0
+  ember-qunit: 6.2.0
   ember-resolver: 8.1.0
   ember-source: 4.11.0
   ember-source-channel-url: 3.0.0
@@ -86,7 +86,7 @@ devDependencies:
   ember-get-config: 2.1.1
   ember-load-initializers: 2.1.2
   ember-page-title: 7.0.0
-  ember-qunit: 6.0.0_bpyxhw4q4amqwk427hkb2mxhua
+  ember-qunit: 6.2.0_znsmspzim3jisubystguxp646i
   ember-resolver: 8.1.0
   ember-source: 4.11.0_j6mhgbor4xqonp65vkpdi5nj6q
   ember-source-channel-url: 3.0.0
@@ -4993,11 +4993,12 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit/6.0.0_bpyxhw4q4amqwk427hkb2mxhua:
-    resolution: {integrity: sha512-idNWh9Ap2HN9e3Xozh5Jrciu5tDhn0okM/bgwDjdks3dwuMhEox45iiRTx469FWQ9+ixjZ40AsXsRTDkfCmvmw==}
-    engines: {node: 14.* || 16.* || >= 17}
+  /ember-qunit/6.2.0_znsmspzim3jisubystguxp646i:
+    resolution: {integrity: sha512-mC+0bp8DwWzJLn8SW3GS8KDZIkl4yLsNYwMi5Dw6+aFllq7FM2crd/dfY4MuOIHK7GKdjtmWJTMGnjSpeSayaw==}
+    engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
-      '@ember/test-helpers': ^2.4.0
+      '@ember/test-helpers': ^2.9.3
+      ember-source: '>=3.28'
       qunit: ^2.13.0
     dependencies:
       '@ember/test-helpers': 2.9.3_ember-source@4.11.0
@@ -5007,6 +5008,7 @@ packages:
       ember-auto-import: 2.6.1_webpack@5.76.2
       ember-cli-babel: 7.26.11
       ember-cli-test-loader: 3.0.0
+      ember-source: 4.11.0_j6mhgbor4xqonp65vkpdi5nj6q
       qunit: 2.19.4
       resolve-package-path: 4.0.3
       silent-error: 1.1.1
@@ -6440,6 +6442,7 @@ packages:
 
   /glob/5.0.15:
     resolution: {integrity: sha512-c9IPMazfRITpmAAKi22dK1VKxGDX9ehhqfABDriL/lzO92xcUKEJPQHrVA/2YHSNFB4iFlykVmWvwo48nr3OxA==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     dependencies:
       inflight: 1.0.6
       inherits: 2.0.4
@@ -10020,6 +10023,7 @@ packages:
 
   /rimraf/2.6.3:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
@@ -10027,12 +10031,14 @@ packages:
 
   /rimraf/2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
 
   /rimraf/3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
@@ -11384,7 +11390,7 @@ packages:
       is-yarn-global: 0.3.0
       latest-version: 5.1.0
       pupa: 2.1.1
-      semver: 7.3.5
+      semver: 7.3.8
       semver-diff: 3.1.1
       xdg-basedir: 4.0.0
     dev: true
